@@ -4,6 +4,7 @@ import react from "@vitejs/plugin-react";
 import flowbiteReact from "flowbite-react/plugin/vite";
 import path from "path";
 import { defineConfig } from "vite";
+import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -15,6 +16,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     flowbiteReact(),
+    svgr(),
   ],
   resolve: {
     alias: {
