@@ -1,0 +1,387 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@import "./layouts/container.css";
+@import "./layouts/sidebar.css";
+@import "./layouts/horizontal.css";
+@import "./layouts/header.css";
+@import "./pages/dashboards.css";
+@import "./pages/widgets.css";
+
+@import "./pages/landingpage.css";
+@import "./pages/auth.css";
+@import "./pages/app.css";
+
+@import "./theme/dark.css";
+@import "./override/reboot.css";
+@import "./layouts/rtl.css";
+
+@import "./theme/default-colors.css";
+
+@plugin 'flowbite-react/plugin/tailwindcss';
+
+@source '../../node_modules/flowbite-react/dist/esm/**/*.mjs';
+@source '../../.flowbite-react/class-list.json';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-dark-md: var(--shadow-dark-md);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-btn-shadow: var(--shadow-btn-shadow);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-tw: var(--radius-tw);
+
+  --leading-21: var(--leading-21);
+
+  --gap-30: var(--gap-30);
+
+  --padding-15: var(--padding-15);
+  --padding-30: var(--padding-30);
+
+  --margin-30: var(--margin-30);
+
+  --color-cyan-500: var(--color-primary);
+  --color-cyan-600: var(--color-primary);
+  --color-cyan-700: var(--color-primary);
+
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-info: var(--color-info);
+  --color-success: var(--color-success);
+  --color-warning: var(--color-warning);
+  --color-error: var(--color-error);
+  --color-lightprimary: var(--color-lightprimary);
+  --color-lightsecondary: var(--color-lightsecondary);
+  --color-lightsuccess: var(--color-lightsuccess);
+  --color-lighterror: var(--color-lighterror);
+  --color-lightinfo: var(--color-lightinfo);
+  --color-lightwarning: var(--color-lightwarning);
+  --color-border: var(--color-border);
+  --color-bordergray: var(--color-bordergray);
+  --color-lightgray: var(--color-lightgray);
+  --color-muted: var(--color-muted);
+  --color-bodytext: var(--color-bodytext);
+  --color-dark: var(--color-dark);
+  --color-link: var(--color-link);
+  --color-darklink: var(--color-darklink);
+  --color-darkborder: var(--color-darkborder);
+  --color-darkgray: var(--color-darkgray);
+  --color-darkinfo: var(--color-darkinfo);
+  --color-primaryemphasis: var(--color-primary-emphasis);
+  --color-secondaryemphasis: var(--color-secondary-emphasis);
+  --color-warningemphasis: var(--color-warning-emphasis);
+  --color-erroremphasis: var(--color-error-emphasis);
+  --color-successemphasis: var(--color-success-emphasis);
+  --color-infoemphasis: var(--color-info-emphasis);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 30px;
+  @apply max-w-[1200px];
+
+  .landingpage & {
+    @apply max-w-[1320px];
+  }
+}
+
+@utility landingpage {
+  & .container {
+    @apply max-w-[1320px];
+  }
+}
+
+@utility dropdown {
+  @apply dark:bg-dark dark:shadow-dark-md relative rounded-sm bg-white shadow-md;
+}
+
+@utility card-title {
+  @apply text-dark text-lg font-semibold dark:text-white;
+}
+
+@utility card-subtitle {
+  @apply dark:text-darklink text-sm font-medium;
+}
+
+@utility border-ld {
+  @apply border-border dark:border-darkborder;
+}
+
+@utility bg-hover {
+  @apply hover:bg-lightgray dark:hover:bg-darkgray;
+}
+
+@utility form-control {
+  & input {
+    @apply border-border dark:border-darkborder w-full border bg-transparent text-sm dark:bg-transparent;
+  }
+
+  & input:focus {
+    @apply border-primary dark:border-primary shadow-none ring-transparent ring-offset-0 outline-hidden;
+  }
+}
+
+@utility form-control-chat {
+  & input {
+    @apply w-full rounded-md border-0 bg-transparent text-sm dark:bg-transparent;
+  }
+
+  & input:focus {
+    @apply w-full border-0! bg-transparent text-sm ring-transparent dark:bg-transparent dark:ring-transparent;
+  }
+}
+
+@utility form-control-rounded {
+  & input {
+    @apply border-border dark:border-darkborder w-full rounded-full border bg-transparent text-sm dark:bg-transparent;
+  }
+
+  & input:focus {
+    @apply border-primary dark:border-primary shadow-none ring-transparent ring-offset-0 outline-hidden;
+  }
+}
+
+@utility form-control-textarea {
+  @apply border-border dark:border-darkborder w-full rounded-full border bg-transparent p-4 text-sm dark:bg-transparent;
+
+  &:focus {
+    @apply border-primary dark:border-primary shadow-none ring-transparent ring-offset-0 outline-hidden;
+  }
+}
+
+@utility form-control-input {
+  @apply border-border dark:border-darkborder w-full rounded-md border bg-transparent text-sm dark:bg-transparent;
+
+  &:focus {
+    @apply border-primary dark:border-primary shadow-none ring-transparent ring-offset-0 outline-hidden;
+  }
+}
+
+@utility form-rounded-md {
+  & input {
+    @apply border-border dark:border-darkborder w-full rounded-md border bg-transparent text-sm dark:bg-transparent;
+  }
+
+  & input:focus {
+    @apply border-primary dark:border-primary shadow-none ring-transparent ring-offset-0 outline-hidden;
+  }
+}
+
+@utility form-rounded {
+  & input {
+    @apply rounded-full;
+  }
+}
+
+@utility input-center {
+  & input {
+    @apply text-center;
+  }
+}
+
+@utility elipse {
+  @apply h-[10px] w-[18px];
+}
+
+@utility select-option {
+  & select {
+    @apply bg-muted text-darklink w-auto border-0 py-2 ps-4 pe-9 font-medium focus:border-0 focus:ring-0 dark:text-white/80;
+  }
+}
+
+@utility select-md {
+  & select {
+    @apply border-ld dark:bg-dark focus:border-primary dark:focus:border-primary w-full rounded-md bg-transparent text-sm focus:ring-0;
+  }
+}
+
+@utility select-rounded {
+  & select {
+    @apply border-ld dark:bg-dark focus:border-primary dark:focus:border-primary w-full rounded-full bg-transparent text-sm focus:ring-0;
+  }
+}
+
+@utility select-md-transparent {
+  & select {
+    @apply border-ld focus:border-primary dark:focus:border-primary w-full rounded-md bg-transparent text-sm focus:ring-0 dark:bg-gray-800/70;
+  }
+}
+
+@utility select-rounded-transparent {
+  & select {
+    @apply border-ld focus:border-primary dark:focus:border-primary w-full rounded-full bg-transparent text-sm focus:ring-0 dark:bg-gray-800/70;
+  }
+}
+
+@utility checkbox {
+  @apply border-bordergray dark:border-darkborder h-[18px] w-[18px] border bg-transparent focus:ring-0 focus:ring-offset-0;
+}
+
+@utility text-primary-ld {
+  @apply hover:text-primary dark:hover:text-primary;
+}
+
+@utility left-part {
+  /* Apps */
+  @apply border-ld w-80 border-e p-6;
+}
+
+@utility btn-circle {
+  @apply text-ld flex h-8 w-8 items-center justify-center rounded-full p-0;
+}
+
+@utility btn-circle-hover {
+  @apply hover:bg-lightprimary hover:text-primary flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-transparent;
+}
+
+@utility text-ld {
+  @apply text-dark dark:text-white;
+}
+
+@utility avatar-full {
+  & img {
+    @apply h-full w-full;
+  }
+}
+
+@utility sorting {
+  & button {
+    @apply text-dark bg-transparent p-0 dark:text-white;
+  }
+
+  & button:hover {
+    @apply bg-transparent;
+  }
+
+  & button span {
+    @apply p-0;
+  }
+
+  & ul li {
+    @apply px-4 py-2;
+  }
+
+  & ul li button:hover {
+    @apply hover:text-primary;
+  }
+}
+
+@utility bg-primary {
+  /* Button Hover Color Set */
+  &button {
+    @apply hover:bg-primaryemphasis;
+  }
+}
+
+@utility bg-secondary {
+  &button {
+    @apply hover:bg-secondaryemphasis;
+  }
+}
+
+@utility bg-info {
+  &button {
+    @apply hover:bg-infoemphasis;
+  }
+}
+
+@utility bg-error {
+  &button {
+    @apply hover:bg-erroremphasis;
+  }
+}
+
+@utility bg-success {
+  &button {
+    @apply hover:bg-successemphasis;
+  }
+}
+
+@utility bg-warning {
+  &button {
+    @apply hover:bg-warningemphasis;
+  }
+}
+
+@utility ui-button {
+  /* Headlessui */
+  @apply flex items-stretch justify-between rounded-full px-5 py-2.5 text-center font-medium text-white;
+}
+
+@utility ui-button-small {
+  @apply flex items-stretch justify-between rounded-full px-6 py-2 text-center font-medium text-white;
+}
+
+@utility ui-dropdown {
+  @apply text-ld dark:bg-dark dark:shadow-dark-md w-full max-w-56! rounded-sm bg-white py-3 text-start shadow-md;
+}
+
+@utility ui-dropdown-item {
+  @apply text-ld hover:text-primary bg-hover focus:bg-hover flex w-full cursor-pointer items-center justify-start gap-3 px-4 py-2 text-sm focus:outline-hidden;
+}
+
+@utility ui-dropdown-animation {
+  @apply origin-top-right transition duration-100 ease-out [--anchor-gap:var(--spacing-1)] focus:outline-hidden data-closed:scale-95 data-closed:opacity-0;
+}
+
+@utility ui-form-control {
+  @apply border-border dark:border-darkborder w-full border bg-transparent text-sm dark:bg-transparent;
+
+  &:focus {
+    @apply border-primary dark:border-primary shadow-none ring-transparent ring-offset-0 outline-hidden dark:ring-transparent dark:focus:ring-0;
+  }
+}
+
+@utility ui-checkbox {
+  @apply border-bordergray dark:border-darkborder data-checked:bg-primary dark:data-checked:bg-primary h-[18px] w-[18px] cursor-pointer rounded border bg-white outline-hidden focus:ring-0 focus:ring-offset-0 dark:bg-transparent;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@layer components {
+  body {
+    @apply dark:bg-dark overflow-x-hidden text-sm;
+  }
+
+  body {
+    @apply text-link dark:text-darklink;
+  }
+
+  /*heading text color*/
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-dark font-semibold dark:text-white;
+  }
+
+  input::placeholder {
+    @apply text-darklink dark:text-darklink;
+  }
+}
