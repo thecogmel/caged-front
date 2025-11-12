@@ -221,17 +221,15 @@ const customTheme = createTheme({
     },
   },
 
-  // checkbox: {
-  //   root: {
-  //     base: "rounded border-2 cursor-pointer ",
-  //     color: {
-  //       default: "text-primary",
-  //       primary: "text-primary",
-  //       secondary: "text-secondary",
-  //       error: "text-error",
-  //     },
-  //   },
-  // },
+  checkbox: {
+    base: "rounded border-2 cursor-pointer ",
+    color: {
+      default: "text-primary",
+      primary: "text-primary",
+      secondary: "text-secondary",
+      error: "text-error",
+    },
+  },
 
   rating: {
     star: {
@@ -439,7 +437,7 @@ const customTheme = createTheme({
 
     control: {
       base: "inline-flex sm:h-10 sm:w-10 h-0 w-0 items-center justify-center rounded-full bg-muted hover:bg-primary hover:text-white  group-hover:bg-primary group-focus:outline-none group-focus:ring-0",
-      icon: "sm:h-6 sm:w-6 h-0 w-0 text-dark sm:h-4 sm:w-4 hover:text-white ",
+      icon: "sm:h-6 sm:w-6 h-0 w-0 text-dark hover:text-white ",
     },
   },
 
@@ -462,7 +460,7 @@ const customTheme = createTheme({
     },
 
     toggle: {
-      base: "relative rounded-full border after:absolute after:rounded-full after:bg-white after:transition-all group-focus:ring-0 group-focus:ring-0",
+      base: "relative rounded-full border after:absolute after:rounded-full after:bg-white after:transition-all group-focus:ring-0",
       checked: {
         on: "after:translate-x-full after:border-white rtl:after:-translate-x-full",
         off: "border-ld bg-gray-200 dark:border-gray-600 dark:bg-gray-700",
