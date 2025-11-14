@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "format": "prettier --write ./src",
     "format:check": "prettier --check ./src"
@@ -19,8 +19,11 @@
     "@tanstack/react-router-devtools": "^1.132.7",
     "flowbite": "^3.1.2",
     "flowbite-react": "^0.12.10",
+    "lodash": "^4.17.21",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-icons": "^5.5.0",
+    "simplebar-react": "^3.3.2",
     "tailwind-merge": "^3.3.1",
     "tailwind-variants": "^3.1.1",
     "tailwindcss": "^4.1.13"
@@ -28,9 +31,11 @@
   "devDependencies": {
     "@eslint/css": "^0.11.1",
     "@eslint/js": "^9.36.0",
+    "@iconify/react": "^6.0.2",
     "@tanstack/eslint-plugin-query": "^5.90.1",
     "@tanstack/router-plugin": "^1.132.7",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/lodash": "^4.17.20",
     "@types/node": "^24.5.2",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",

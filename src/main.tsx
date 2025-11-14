@@ -5,7 +5,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import { RouterProvider } from "@/components/router-provider";
-import { CustomizerContextProvider } from "@/context/customizerContext";
+import { CustomizerContextProvider } from "@/context/customizer-context";
 import "@/css/globals.css";
 import { router } from "@/router";
 import { queryClient } from "@/utils";
