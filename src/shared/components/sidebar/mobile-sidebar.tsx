@@ -5,7 +5,7 @@ import SimpleBar from "simplebar-react";
 
 import { NavCollapse, NavItems, SidebarContent } from ".";
 
-const MobileSidebar = () => {
+export function MobileSidebar() {
   /* const { selectedIconId } = useCustomizer();
 
   const selectedContent = SidebarContent.find(
@@ -86,6 +86,4 @@ const MobileSidebar = () => {
       </div>
     </>
   );
-};
-
-export default MobileSidebar;
+}

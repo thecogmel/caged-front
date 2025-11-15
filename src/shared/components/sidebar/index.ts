@@ -1,6 +1,6 @@
 export * from "./sidebar-content";
 export * from "./sidebar";
-export * from "./MobileSidebar";
+export * from "./mobile-sidebar";
 export * from "./icon-sidebar";
 export * from "./MiniSidebar";
 export * from "./nav-items";
