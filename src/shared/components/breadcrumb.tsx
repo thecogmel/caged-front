@@ -13,7 +13,7 @@ interface BreadCrumbType {
   title: string;
 }
 
-const BreadcrumbComp = ({ title }: BreadCrumbType) => {
+export function Breadcrumb({ title }: BreadCrumbType) {
   return (
     <>
       <CardBox
@@ -54,6 +54,4 @@ const BreadcrumbComp = ({ title }: BreadCrumbType) => {
       </CardBox>
     </>
   );
-};
-
-export default BreadcrumbComp;
+}

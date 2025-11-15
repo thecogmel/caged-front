@@ -29,7 +29,7 @@ export interface MenuItem {
   badge?: boolean;
 }
 
-const SidebarContent: MenuItem[] = [
+export const SidebarContent: MenuItem[] = [
   {
     heading: "Home",
     children: [
@@ -1030,5 +1030,3 @@ const SidebarContent: MenuItem[] = [
     ],
   },
 ];
-
-export default SidebarContent;

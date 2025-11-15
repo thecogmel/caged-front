@@ -1,8 +1,8 @@
 import { Icon } from "@iconify/react";
 import { Button, Card } from "flowbite-react";
-import React, { useContext } from "react";
+import React from "react";
 
-import { CustomizerContext } from "@/context/customizerContext";
+import { useCustomizer } from "@/context/customizer-context";
 
 interface TitleCardProps {
   children: React.ReactNode;
@@ -18,7 +18,7 @@ const TitleIconCard: React.FC<TitleCardProps> = ({
   title,
   onDownload,
 }) => {
-  const { isCardShadow, isBorderRadius } = useContext(CustomizerContext);
+  const { isCardShadow, isBorderRadius } = useCustomizer();
 
   return (
     <Card

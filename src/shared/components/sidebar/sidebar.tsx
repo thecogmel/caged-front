@@ -5,11 +5,9 @@ import SimpleBar from "simplebar-react";
 
 import { useCustomizer } from "@/context/customizer-context";
 
-import NavCollapse from "./NavCollapse";
-import NavItems from "./NavItems";
-import SidebarContent from "./Sidebaritems";
+import { NavCollapse, NavItems, SidebarContent } from ".";
 
-const SidebarLayout = () => {
+export function SidebarLayout() {
   const { isCollapse } = useCustomizer();
   return (
     <>
@@ -95,6 +93,4 @@ const SidebarLayout = () => {
       </div>
     </>
   );
-};
-
-export default SidebarLayout;
+}

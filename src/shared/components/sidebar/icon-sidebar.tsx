@@ -6,7 +6,7 @@ import { useCustomizer } from "@/context/customizer-context";
 
 import Miniicons from "./MiniSidebar";
 
-export const IconSidebar = () => {
+export function IconSidebar() {
   const { selectedIconId, setSelectedIconId, setIsCollapse } =
     useCustomizer() || {};
   const [activeIcon, setActiveIcon] = useState(selectedIconId);
@@ -47,4 +47,4 @@ export const IconSidebar = () => {
       </SimpleBar>
     </>
   );
-};
+}

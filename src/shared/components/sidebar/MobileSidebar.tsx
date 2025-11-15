@@ -3,9 +3,7 @@ import { Sidebar, SidebarItemGroup, SidebarItems } from "flowbite-react";
 import React from "react";
 import SimpleBar from "simplebar-react";
 
-import NavCollapse from "./NavCollapse";
-import NavItems from "./NavItems";
-import SidebarContent from "./Sidebaritems";
+import { NavCollapse, NavItems, SidebarContent } from ".";
 
 const MobileSidebar = () => {
   /* const { selectedIconId } = useCustomizer();

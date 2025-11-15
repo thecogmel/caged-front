@@ -1,7 +1,18 @@
-import { createFileRoute } from "@tanstack/react-router";
-
-import Home from "@/modules/public/home/containers/home-page";
+import { Outlet, createFileRoute, useNavigate } from "@tanstack/react-router";
+import { useEffect } from "react";
 
 export const Route = createFileRoute("/")({
-  component: () => <Home />,
+  component: Root,
 });
+
+function Root() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate({
+      to: "/login",
+    });
+  }, [navigate]);
+
+  return <Outlet />;
+}
