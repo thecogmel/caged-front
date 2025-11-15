@@ -8,10 +8,8 @@ const AccountTab = () => {
       <div className="grid grid-cols-12 gap-6">
         <div className="col-span-12 md:col-span-6">
           <OutlineCard>
-            <h5 className="card-title">Change Profile</h5>
-            <p className="card-subtitle -mt-1">
-              Change your profile picture from hereeee
-            </p>
+            <h5 className="card-title">Mudar perfil</h5>
+            <p className="card-subtitle -mt-1">Mude sua foto de perfil aqui</p>
             <div className="mx-auto mt-5 text-center">
               <img
                 src="/images/profile/user-1.jpg"
@@ -25,21 +23,21 @@ const AccountTab = () => {
                 <Button color={"lighterror"}>Reset</Button>
               </div>
               <p className="text-darklink text-sm">
-                Allowed JPG, GIF or PNG. Max size of 800K
+                Permitido JPG, GIF ou PNG. Tamanho máximo de 800K
               </p>
             </div>
           </OutlineCard>
         </div>
         <div className="col-span-12 md:col-span-6">
           <OutlineCard>
-            <h5 className="card-title">Change Password</h5>
+            <h5 className="card-title">Mudar senha</h5>
             <p className="card-subtitle -mt-1">
-              To change your password please confirm here
+              Para mudar sua senha, por favor confirme aqui
             </p>
             <div className="mt-3 flex flex-col gap-3">
               <div>
                 <div className="mb-2 block">
-                  <Label htmlFor="cpwd">Current Password</Label>
+                  <Label htmlFor="cpwd">Senha atual</Label>
                 </div>
                 <TextInput
                   id="cpwd"
@@ -50,7 +48,7 @@ const AccountTab = () => {
               </div>
               <div>
                 <div className="mb-2 block">
-                  <Label htmlFor="npwd">New Password</Label>
+                  <Label htmlFor="npwd">Nova senha</Label>
                 </div>
                 <TextInput
                   id="npwd"
@@ -61,7 +59,7 @@ const AccountTab = () => {
               </div>
               <div>
                 <div className="mb-2 block">
-                  <Label htmlFor="cfpwd">Confirm Password</Label>
+                  <Label htmlFor="cfpwd">Confirmar senha</Label>
                 </div>
                 <TextInput
                   id="cfpwd"
@@ -76,16 +74,16 @@ const AccountTab = () => {
 
         <div className="col-span-12">
           <OutlineCard>
-            <h5 className="card-title">Personal Details</h5>
+            <h5 className="card-title">Detalhes pessoais</h5>
             <p className="card-subtitle -mt-1">
-              To change your personal detail , edit and save from here
+              Para mudar seus detalhes pessoais, edite e salve aqui
             </p>
             <div className="grid grid-cols-12 gap-6">
               <div className="col-span-12 md:col-span-6">
                 <div className="mt-3 flex flex-col gap-3">
                   <div>
                     <div className="mb-2 block">
-                      <Label htmlFor="ynm">Your Name</Label>
+                      <Label htmlFor="ynm">Seu nome</Label>
                     </div>
                     <TextInput
                       id="ynm"
@@ -97,7 +95,7 @@ const AccountTab = () => {
                   </div>
                   <div>
                     <div className="mb-2 block">
-                      <Label htmlFor="loc">Location</Label>
+                      <Label htmlFor="loc">Localização</Label>
                     </div>
                     <Select id="countries" className="select-md" required>
                       <option selected>United States</option>
@@ -124,7 +122,7 @@ const AccountTab = () => {
                 <div className="mt-3 flex flex-col gap-3">
                   <div>
                     <div className="mb-2 block">
-                      <Label htmlFor="store">Store Name</Label>
+                      <Label htmlFor="store">Nome da loja</Label>
                     </div>
                     <TextInput
                       id="store"
@@ -136,7 +134,7 @@ const AccountTab = () => {
                   </div>
                   <div>
                     <div className="mb-2 block">
-                      <Label htmlFor="curr">Currency</Label>
+                      <Label htmlFor="curr">Moeda</Label>
                     </div>
                     <Select id="curr" className="select-md" required>
                       <option defaultValue={"India"}>India (INR)</option>
@@ -148,7 +146,7 @@ const AccountTab = () => {
                   </div>
                   <div>
                     <div className="mb-2 block">
-                      <Label htmlFor="ph">Phone</Label>
+                      <Label htmlFor="ph">Telefone</Label>
                     </div>
                     <TextInput
                       id="ph"
@@ -163,7 +161,7 @@ const AccountTab = () => {
               <div className="col-span-12 -mt-4">
                 <div>
                   <div className="mb-2 block">
-                    <Label htmlFor="add">Address</Label>
+                    <Label htmlFor="add">Endereço</Label>
                   </div>
                   <TextInput
                     id="add"
@@ -176,8 +174,8 @@ const AccountTab = () => {
               </div>
             </div>
             <div className="flex justify-end gap-3 pt-5">
-              <Button color={"primary"}>Save</Button>
-              <Button color={"lighterror"}>Cancel</Button>
+              <Button color={"primary"}>Salvar</Button>
+              <Button color={"lighterror"}>Cancelar</Button>
             </div>
           </OutlineCard>
         </div>

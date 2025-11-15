@@ -21,7 +21,7 @@ export function LoginPage() {
               <form className="mt-6">
                 <div className="mb-4">
                   <div className="mb-2 block">
-                    <Label htmlFor="Username">Username</Label>
+                    <Label htmlFor="Username">E-mail</Label>
                   </div>
                   <TextInput
                     id="username"
@@ -48,14 +48,14 @@ export function LoginPage() {
                       htmlFor="accept"
                       className="cursor-pointer font-normal opacity-90"
                     >
-                      Remeber this Device
+                      Permanecer logado
                     </Label>
                   </div>
                   <Link
                     to="/perfil"
                     className="text-primary text-sm font-medium"
                   >
-                    Forgot Password ?
+                    Esqueceu sua senha?
                   </Link>
                 </div>
                 <Button
@@ -64,19 +64,9 @@ export function LoginPage() {
                   as={Link}
                   className="bg-primary hover:bg-primaryemphasis w-full rounded-md text-white"
                 >
-                  Sign in
+                  Entrar
                 </Button>
               </form>
-              <div className="text-ld mt-6 flex items-center justify-center gap-2 text-base font-medium">
-                <p>New to Modernize?</p>
-                <Link
-                  href="/"
-                  to="/"
-                  className="text-primary text-sm font-medium"
-                >
-                  Create an account
-                </Link>
-              </div>
             </div>
           </div>
         </div>

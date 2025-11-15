@@ -13,12 +13,12 @@ export function ProfilePage() {
       title: "Home",
     },
     {
-      title: "Account Setting",
+      title: "Configurações da conta",
     },
   ];
   return (
     <>
-      <Breadcrumb title="Account Setting" items={BCrumb} />
+      <Breadcrumb title="Configurações da conta" items={BCrumb} />
 
       <CardBox className="px-0 py-0">
         <Tabs aria-label="Tabs with underline" variant="underline">
