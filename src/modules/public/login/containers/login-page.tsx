@@ -52,7 +52,7 @@ export function LoginPage() {
                     </Label>
                   </div>
                   <Link
-                    to="/perfil"
+                    to="/esqueci-minha-senha"
                     className="text-primary text-sm font-medium"
                   >
                     Esqueceu sua senha?
@@ -60,8 +60,8 @@ export function LoginPage() {
                 </div>
                 <Button
                   color={"primary"}
-                  href="/"
                   as={Link}
+                  to="/perfil"
                   className="bg-primary hover:bg-primaryemphasis w-full rounded-md text-white"
                 >
                   Entrar
