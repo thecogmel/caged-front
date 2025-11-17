@@ -37,7 +37,7 @@ export const SidebarContent: MenuItem[] = [
         name: "Dashboard",
         icon: "tabler:chart-bar",
         id: uniqueId(),
-        url: "/",
+        url: "/dashboard",
       },
       {
         name: "Em construção",
@@ -46,8 +46,8 @@ export const SidebarContent: MenuItem[] = [
         children: [
           {
             id: uniqueId(),
-            name: "Homepage",
-            url: "/frontend-pages/homepage",
+            name: "Perfil",
+            url: "/perfil",
           },
         ],
       },
